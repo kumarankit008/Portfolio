@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html,body{
+    min-width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family:sans-serif;
+    background: transparent;
+
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 0.9%;
+    padding-top: 7.5rem;
+}
+header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    min-height: 12vh;
+    min-width: 100%;
+    z-index: 10;
+    background: #0f1423;
+    border-bottom: 2px solid #0c2d48;
+}
+header .navbar .logo{
+    margin-left: 20px;
+    color: rgb(124, 91, 91);
+
+}
+.logo a{
+    color:#b1d4e0;
+    font-size: 30px;
+    line-height: 38px;
+    
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #b1d4e0;
+    border-top-color: #0c2d48;
+
+    padding :5px
+}
+ header .navbar .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 50%;
+    
+    margin: auto 20px auto 0;
+    
+    
+}
+i{
+    padding: 10px;
+}
+header .navbar .menu li{
+   justify-items: flex-end;
+   
+}
+header .navbar .menu li a{
+    color: #b1d4e0;
+    text-transform: uppercase;
+   transition: color 1s ease, border 1s ease;
+   
+
+    
+}
+
+header .navbar .hamburger{
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+
+}
+ .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background:#b1d4e0;    
+}
+
+li span:hover{
+    border-bottom: 1px solid #b1d4e0;
+    
+   
+}
+
+
+/* Home */
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+    background-image: url(../images/home-bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+     padding: 0 9%;
+    padding-top: 7.5rem;
+  
+}
+
+.home .container h1{
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+.home .container h2{
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgb(151, 9, 68);
+}
+
+.home .container h2 span{
+    border-bottom: 2px solid rgb(231, 17, 53);
+    padding-bottom: 2px;
+}
+.home .container h2 span:hover{
+    border-bottom-color: rgb(224, 15, 224);
+}
+
+.home .container .social-links{
+  margin-top: 40px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.home .container .social-links a{
+    font-size: 29px;
+    
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+    align-items: center;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+}
+.home .container .social-links a:hover{
+    background:rgb(80, 1, 69) ;
+    color: #fff;
+}
+
+/* Buttons */
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    
+    margin-top: 20px;
+    margin-left: 25px;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed rgb(231, 17, 53);
+}
+
+.connect a{
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s;
+  background: rgb(230, 22, 119);
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+.connect a:hover{
+    background: #fff;
+    color:rgb(158, 2, 172);
+    border: 1px solid rgb(158, 2, 172);
+    transition: all 0.4s ease-in;
+}
+
+/* About */
+.about{
+  
+     background-image: url(../images/bg3layer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     padding: 0 9%;
+    padding-top: 7.5rem;
+}
+.about-me h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(158, 2, 172);
+}
+.about-me .section-title p{
+    font-size: 1.5rem;
+    color: rgb(230, 22, 119);
+    border-bottom: 2px dashed rgb(230, 22, 119);
+}
+.about .about-me .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+    
+   
+}
+.about .about-me .content img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border:7.5px solid rgba(230, 26, 60, 0.877);
+    
+    
+}
+.about .about-me .content p{
+    font-size: 20px;
+    word-spacing: 2px;
+    color:rgb(151, 9, 68);
+    padding: 20px;
+} 
+
+/* ********************Education Start ************/
+ 
+.education{
+    height: 100vh;
+    padding:20px;
+    background: url(../images/about-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    
+    
+}
+.education > h1{
+  padding-top: 30px;
+  padding-left: 40px;
+   font-size: 50px;
+    font-weight: 700;
+    color: rgb(44, 1, 48);
+    border-bottom: 2px dashed rgb(151, 9, 68);
+}
+.education .container{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.education .container .box{
+  padding: 30px;
+  width: 32%;
+  border: 5px solid rgb(189, 5, 112);
+  margin: 20px;
+ background:rgba(8, 0, 4, 0.788);
+ border-bottom-right-radius: 99px;
+ border-top-left-radius: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ box-shadow: 1px 2px 30px black;
+  color: rgb(252, 209, 235);
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.4s ease-in;
+  
+}
+.education .container .box h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease-in;
+}
+.education .container .box-body h3{
+    margin-bottom: 10px;
+    text-decoration-line: underline;
+}
+.education .container .box-body{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: #fff;
+    font-weight:700;
+
+}
+
+.education .container .box:hover{
+transform: translateY(-10px) translateZ(2px);
+
+}
+/* ************Education End**************** */
+
+
+
+/* **************Skills Start */
+
+.skills{
+    background: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.skills h1{
+     font-size: 50px;
+    font-weight: 700;
+    color: rgb(44, 1, 48);
+    border-bottom: 3px dashed rgb(241, 166, 198);
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+.skills{
+    margin-top: 100px;
+}
+.skills  .containerone{
+
+   width: 50%;
+   padding: 30px;
+   float: left;
+   border-right:2px dashed #fff;
+   color: #fff;
+   box-shadow: 1px 3px 13px rgb(36, 2, 36);
+   
+   
+}
+
+  .ProgWidth {
+    padding: 0px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
+  }
+  .skillDiv {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(248, 169, 215);
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .skillBar {
+    display: block;
+    height: 10px;
+    background-color: rgb(63, 5, 46);
+    border-radius: 10px;
+  }
+  .p {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+
+  .htmlBar {
+    width: 70%;
+    animation: html 3s 1s 5 forwards;
+  }
+  .cssBar {
+    width: 90%;
+    animation: css 3s 1s 5 forwards;
+  }
+  .jsBar {
+    width: 75%;
+    animation: js 3s 1s 5 forwards;
+  }
+  
+  .javaBar {
+    width: 85%;
+    animation: java 3s 1s 5 forwards;
+  }
+  .ccpBar {
+    width: 80%;
+    animation: ccp 3s 1s 5 forwards;
+  }
+  .reactBar {
+    width: 10%;
+    animation: react 3s 1s 5 forwards;
+  }
+  .nodeBar {
+    width: 35%;
+    animation: node 3s 1s 5 forwards;
+  }
+  .sqlBar {
+    width: 85%;
+    animation: sql 3s 1s 5 forwards;
+  }
+  
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  @keyframes css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @keyframes js {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  @keyframes java {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+  @keyframes ccp {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+
+
+
+  @keyframes sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
+    }
+  }
+
+/* ************skills End************* */
+
+
+
+
+/* *************Projects ***********/
+
+.projects{
+    height: 100vh;
+    background: url(../images/bg3.jpg);
+    
+    background-color: rgba(231, 17, 53,0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.projects > h1{
+     font-size: 48px;
+    margin: 0;
+    padding: 10px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    border-bottom: 3px dashed #fff;
+    margin-bottom: 10px;
+}
+
+.projects .container{
+    display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+.projects .container .box{
+    padding: 20px;
+    
+  width: 32%;
+  height: 40vh;
+  border: 5px solid rgb(189, 5, 112);
+  margin: 20px;
+  margin-top: 40px;
+ background:rgba(8, 0, 4, 0.788);
+ border-radius: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ box-shadow: 1px 2px 30px black;
+  color: rgb(252, 209, 235);
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.4s ease-in;
+}
+
+/* ******************Projects End *************/
+
