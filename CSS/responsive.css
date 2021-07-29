@@ -86,17 +86,31 @@ header .navbar .hamburger{
     }
 
     /* Education */
- 
+   .education{
+       height: auto;
+   }
     .education .container{
        flex-direction: column;
-       transition: all 0.4s ease;
+       
     }
     .education .container .box{
         width: 100%;
     }
     
     /* Skills */
-    
+    .projects{
+        height: auto;
+    }
+    .projects .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .projects .container .box{
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+    }
+    /* Projects */
     
 }
 
