@@ -325,13 +325,13 @@ transform: translateY(-10px) translateZ(2px);
 
 /* **************Skills Start */
 
-.skills{
+.skills_outer{
     background: url(../images/footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-.skills h1{
+.skills_outer h1{
      font-size: 50px;
     font-weight: 700;
     color: rgb(44, 1, 48);
@@ -339,14 +339,13 @@ transform: translateY(-10px) translateZ(2px);
     padding-left: 30px;
     margin-bottom: 30px;
 }
-.skills{
-    margin-top: 100px;
-}
+
 .skills  .containerone{
 
    width: 50%;
    padding: 30px;
    float: left;
+   
    border-right:2px dashed #fff;
    color: #fff;
    box-shadow: 1px 3px 13px rgb(36, 2, 36);
@@ -381,30 +380,30 @@ transform: translateY(-10px) translateZ(2px);
   }
 
   .htmlBar {
-    width: 70%;
-    
-  }
-  .cssBar {
     width: 90%;
     
   }
+  .cssBar {
+    width: 70%;
+    
+  }
   .jsBar {
-    width: 75%;
+    width: 40%;
    
   }
   
   .javaBar {
-    width: 85%;
+    width: 65%;
     
   }
   .ccpBar {
-    width: 80%;
+    width: 90%;
     
   }
   
  
   .sqlBar {
-    width: 85%;
+    width: 45%;
     
   }
   
@@ -469,9 +468,9 @@ transform: translateY(-10px) translateZ(2px);
 
 .projects{
     height: 100vh;
-    background: url(../images/bg3.jpg);
+     background: url(../images/bg3.jpg); 
     
-    background-color: rgba(231, 17, 53,0.6);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
